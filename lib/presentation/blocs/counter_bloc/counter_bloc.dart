@@ -1,6 +1,3 @@
-import 'dart:ffi';
-import 'dart:js_util';
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 
@@ -27,7 +24,7 @@ class CounterBloc extends Bloc<CounterEvent, CounterState>{
   }
 
   void increaseBy([int value = 1]){
-    add(CounterIncreased(value));
+    add( CounterIncreased(value) );
   }
 
   void resetCounter(){
